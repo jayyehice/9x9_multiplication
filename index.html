@@ -20,7 +20,7 @@
     <div class="container" id="app">
         <div class="row justify-content-center">
 
-            <div class="col-10">
+            <div class="col-11">
 
                 <div class="row rowm" v-for="(exam, index) in examList">
 
@@ -40,7 +40,7 @@
                         <h2>=</h2>
                     </div>
         
-                    <div class="col-2">
+                    <div class="col-3">
                         <input type="text" :class="checkClass[index]" data-index="index" v-model="ans[index]" @change="changeIndex(index)">
                     </div>
 
