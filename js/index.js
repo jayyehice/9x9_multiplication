@@ -22,6 +22,17 @@ const App = {
       }
     }
   },
+  computed:{
+    score(){
+      let total = 0;
+      for(let i=0; i<this.checkClass.length; i++){
+        if(this.checkClass[i] == "right"){
+          total += 100/(this.checkClass.length);
+        }
+      }
+      return total;
+    },
+  },
   mounted() {
     const firstNum = Math.floor(Math.random() * this.level) + 2;
 
